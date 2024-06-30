@@ -70,7 +70,7 @@ try{
     if(!user){
         return res.status(400).json({success,error: "try to login with correct credentials"})
     }
-    const passwordCompare = (password === user.password); 
+    const passwordCompare = (password === secPass); 
     // console.log(passwordCompare)
     // console.log(user.password)
     if(!passwordCompare){
