@@ -10,7 +10,7 @@ const Login = () => {
     const history = useNavigate();
     const handleSubmit = async(e) =>{
         e.preventDefault();
-        const response = await fetch(`https://notes-chi-liart.vercel.app/api/auth/login`, {
+        const response = await fetch(`https://notes-chi-liart.vercel.app/auth/login`, {
             method: "POST",
             headers: {
               "Content-Type": "application/json"
