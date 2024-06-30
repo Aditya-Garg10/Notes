@@ -56,11 +56,11 @@ router.post('/login',[
     body('email','enter a valid email').isEmail(),
 ], async(req, res)=>{
 
-    const errors = validationResult(req);
-    if(!errors.isEmpty()){
-        success = false;
-        return res.status(400).json({success,erros: errors.array()})
-}
+//     const errors = validationResult(req);
+//     if(!errors.isEmpty()){
+//         success = false;
+//         return res.status(400).json({success,erros: errors.array()})
+// }
 
 const {password} = req.body;
 
