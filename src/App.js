@@ -18,7 +18,7 @@ function App() {
   
 
   const getNote = async () => {
-    const response = await fetch(`https://notes-backend-six-phi.vercel.app//notes/fetchallnotes`, {
+    const response = await fetch(`https://notes-chi-liart.vercel.app/notes/fetchallnotes`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -31,7 +31,7 @@ function App() {
 
   const addNote = async (title, description, tag) => {
     //eslint-disable-next-line
-    const response = await fetch(`https://notes-backend-six-phi.vercel.app/notes/addnote`, {
+    const response = await fetch(`https://notes-chi-liart.vercel.app/notes/addnote`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -44,7 +44,7 @@ function App() {
   };
   const editNote = async (id, title, description, tag) => {
     //eslint-disable-next-line
-    const response = await fetch(`https://notes-backend-six-phi.vercel.app/notes/updatenote/${id}`, {
+    const response = await fetch(`https://notes-chi-liart.vercel.app/notes/updatenote/${id}`, {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -69,7 +69,7 @@ function App() {
     getNote()
   };
   const deleteNote = async (id) => {
-    const response = await fetch(`https://notes-backend-six-phi.vercel.app/notes/deletenote/${id}`, {
+    const response = await fetch(`https://notes-chi-liart.vercel.app/notes/deletenote/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
