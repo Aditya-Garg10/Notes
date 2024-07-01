@@ -69,7 +69,7 @@ function App() {
     getNote()
   };
   const deleteNote = async (id) => {
-    const response = await fetch(`https://notes-chi-liart.vercel.app/notes/deletenote/${id}`, {
+    const response = await fetch("https://notes-chi-liart.vercel.app/notes/deletenote/${id}", {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
