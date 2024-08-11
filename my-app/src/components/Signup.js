@@ -15,6 +15,7 @@ const Signup = (props) => {
         e.preventDefault();
         const response = await fetch("https://notes-chi-liart.vercel.app/auth/createuser", {
             method: "POST",
+            mode: 'no-cors'
             headers: {
               "Content-Type": "application/json"
             },
